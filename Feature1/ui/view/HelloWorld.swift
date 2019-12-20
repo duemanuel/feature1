@@ -15,6 +15,6 @@ public struct Feature1: View {
 
 struct HelloWorld_Previews: PreviewProvider {
     static var previews: some View {
-        HelloWorld(texto: "Hello World")
+        Feature1(texto: "Hello World")
     }
 }
