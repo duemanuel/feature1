@@ -9,8 +9,10 @@ public struct Feature1: View {
     }
     
     public var body: some View {
-        Text(self.texto)
-        .edgesIgnoringSafeArea(.all)
+        ZStack {
+            Text(self.texto)
+        }
+        .frame(minWidth: 0, maxWidth: 712, minHeight: 0, maxHeight: UIScreen.main.bounds.height)
     }
 }
 
