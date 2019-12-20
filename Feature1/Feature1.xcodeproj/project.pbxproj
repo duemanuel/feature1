@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2E140B8823AD06E1005ACBA1 /* Feature1.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E140B8623AD06E1005ACBA1 /* Feature1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E140B9323AD07CE005ACBA1 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E140B9223AD07CE005ACBA1 /* HelloWorld.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2E140B8323AD06E1005ACBA1 /* Feature1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Feature1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E140B8623AD06E1005ACBA1 /* Feature1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Feature1.h; sourceTree = "<group>"; };
 		2E140B8723AD06E1005ACBA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E140B9223AD07CE005ACBA1 /* HelloWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +48,27 @@
 		2E140B8523AD06E1005ACBA1 /* Feature1 */ = {
 			isa = PBXGroup;
 			children = (
+				2E140B8E23AD0740005ACBA1 /* ui */,
 				2E140B8623AD06E1005ACBA1 /* Feature1.h */,
 				2E140B8723AD06E1005ACBA1 /* Info.plist */,
 			);
 			path = Feature1;
+			sourceTree = "<group>";
+		};
+		2E140B8E23AD0740005ACBA1 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				2E140B8F23AD074C005ACBA1 /* view */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		2E140B8F23AD074C005ACBA1 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				2E140B9223AD07CE005ACBA1 /* HelloWorld.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +114,7 @@
 				TargetAttributes = {
 					2E140B8223AD06E1005ACBA1 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -131,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E140B9323AD07CE005ACBA1 /* HelloWorld.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +281,7 @@
 		2E140B8C23AD06E1005ACBA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -275,6 +297,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.eduardooliveira.Feature1;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +306,7 @@
 		2E140B8D23AD06E1005ACBA1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
