@@ -1,13 +1,20 @@
 import SwiftUI
 
 public struct HelloWorld: View {
+    
+    var texto: String!
+    
+    init(texto: String) {
+        self.texto = texto
+    }
+    
     public var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(self.texto)
     }
 }
 
 struct HelloWorld_Previews: PreviewProvider {
     static var previews: some View {
-        HelloWorld()
+        HelloWorld(texto: "Hello World")
     }
 }
