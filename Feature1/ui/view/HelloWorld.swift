@@ -4,7 +4,7 @@ public struct HelloWorld: View {
     
     var texto: String!
     
-    init(texto: String) {
+    public init(texto: String) {
         self.texto = texto
     }
     
