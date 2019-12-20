@@ -1,6 +1,6 @@
 import SwiftUI
 
-public struct HelloWorld: View {
+public struct Feature1: View {
     
     var texto: String!
     
