@@ -10,6 +10,7 @@ public struct Feature1: View {
     
     public var body: some View {
         Text(self.texto)
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
